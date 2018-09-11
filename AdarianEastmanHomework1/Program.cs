@@ -27,7 +27,6 @@ namespace AdarianEastmanHomework1
 
         private static void LoadDictionary()
         {
-            var words = System.IO.File.ReadAllLines("./dictionary.txt");
             _allWords = new List<string>(System.IO.File.ReadLines("./dictionary.txt"));
             _wordsByLength = new Dictionary<int, List<string>>();
 
